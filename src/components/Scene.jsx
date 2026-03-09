@@ -89,7 +89,10 @@ export default function Scene() {
 
     return (
         <>
-            <div ref={canvasRef} />
+            <div
+                className="canvas"
+                ref={canvasRef}
+            />
         </>
     )
 }
