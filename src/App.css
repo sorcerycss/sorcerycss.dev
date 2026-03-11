@@ -23,6 +23,12 @@
   box-sizing: border-box;
 }
 
+ul[class] {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 /* General styling
 ================== */
 
@@ -138,28 +144,49 @@ body::before {
 
 .social {
   display: flex;
-  justify-content: space-between;
-  padding: 0;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 2rem;
 
   animation: fadeUp 1s ease both;
   animation-delay: 0.6s;
 }
 
-.social li {
-  list-style: none;
-}
-
-.social a {
+.social__link {
   display: flex;
   align-items: center;
   gap: 0.5em;
+
+  font-size: 0.72rem;
+  color: #5a5470;
   text-decoration: none;
-  color: #fff;
   cursor: pointer;
+
+  transition: color 0.3s, gap 0.3s;
 }
 
-.social span {
+.social__link:hover,
+.social__link:active {
+  color: #a78bfa;
+  gap: 0.75rem;
+}
+
+.social__link svg {
+  width: 16px;
+  height: 16px;
+  /* flex-shrink: 0; */
+
+  transition: transform 0.3s;
+}
+
+.social__link:hover svg {
+  transform: scale(1.2);
+}
+
+.social__link span {
+  letter-spacing: 0.12em;
   text-transform: uppercase;
+  margin-top: auto;
 }
 
 /* Animation
