@@ -9,7 +9,11 @@ export default function Layout() {
             <div className="glow"></div>
             <div className="container">
                 <main className="main">
-                    <Scene />
+                    <div id="canvas-wrap">
+                        <div class="ring"></div>
+                        <div class="ring ring-2"></div>
+                        <Scene />
+                    </div>
                     <Hero />
                     <div className="divider"></div>
                     <Links />
