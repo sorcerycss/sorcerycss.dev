@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom"
 import Scene from "./Scene"
 import Hero from "./Hero"
 import Links from "./Links"
+import Footer from "./Footer"
 
 export default function Layout() {
     return (
@@ -19,6 +20,7 @@ export default function Layout() {
                     <Links />
                     <Outlet />
                 </main>
+                <Footer/>
             </div>
         </>
     )

@@ -261,3 +261,16 @@ body::before {
     transform: rotate(360deg);
   }
 }
+
+/* footer
+======== */
+.footer {
+  font-size: 0.6rem;
+  color: var(--clr-subtitle);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding-bottom: 1.5rem;
+  opacity: 0.5;
+  animation: fadeUp 1s ease both;
+  animation-delay: 0.8s;
+}
